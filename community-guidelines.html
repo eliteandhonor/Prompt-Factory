@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Guidelines - PromptVerse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #9c27b0;
+            --primary-light: #bb86fc;
+            --primary-dark: #6a0dad;
+            --secondary: #03dac6;
+            --background: #121212;
+            --surface: #1e1e1e;
+            --surface-light: #2d2d2d;
+            --on-background: #e1e1e1;
+            --on-surface: #ffffff;
+            --error: #cf6679;
+            --success: #4caf50;
+            --warning: #ff9800;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--on-background);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--primary-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px; /* Adjusted for better readability of text content */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: var(--surface);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-light);
+        }
+
+        .logo i {
+            margin-right: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            color: var(--on-background);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-light);
+        }
+
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            margin: 3rem 0 1.5rem;
+            color: var(--primary-light);
+            font-size: 2.8rem;
+        }
+
+        .page-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: var(--on-background);
+            font-size: 1.1rem;
+        }
+
+        /* Guidelines Content */
+        .guidelines-container {
+            background-color: var(--surface);
+            border-radius: 10px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .guidelines-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .guidelines-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .guidelines-section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-light);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--surface-light);
+            display: flex;
+            align-items: center;
+        }
+
+        .guidelines-section h2 i {
+            margin-right: 0.8rem;
+            font-size: 1.6rem;
+        }
+
+        .guidelines-section h3 {
+            font-size: 1.3rem;
+            color: var(--on-surface);
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .guidelines-section p {
+            margin-bottom: 1rem;
+            color: var(--on-background);
+        }
+
+        .guidelines-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .guidelines-section li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .guidelines-section li::before {
+            content: "\f105"; /* Font Awesome chevron-right */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+        }
+
+        .guidelines-section strong {
+            color: var(--on-surface);
+            font-weight: 500;
+        }
+
+        /* Alert Style for Guidelines */
+        .guideline-alert {
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+            display: flex;
+            align-items: flex-start; /* Align icon to top */
+            border-left: 4px solid;
+        }
+
+        .guideline-alert i {
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem; /* Align icon with first line of text */
+        }
+
+        .guideline-alert-info {
+            border-color: var(--secondary);
+            background-color: rgba(3, 218, 198, 0.1); /* secondary with alpha */
+            color: var(--secondary);
+        }
+
+        .guideline-alert-warning {
+            border-color: var(--warning);
+            background-color: rgba(255, 152, 0, 0.1); /* warning with alpha */
+            color: var(--warning);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface);
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-light);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--on-background);
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-light);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--surface-light);
+            border-radius: 50%;
+            color: var(--on-background);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            color: var(--on-surface);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--surface-light);
+            color: var(--on-background);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            .nav-links li {
+                margin: 0;
+            }
+
+            .page-title {
+                font-size: 2.2rem;
+            }
+
+            .guidelines-container {
+                padding: 1.5rem;
+            }
+
+            .guidelines-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .guidelines-section h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>PromptVerse</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#prompts">Prompts</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="manage-categories.html">Manage Categories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title">Community Guidelines</h1>
+        <p class="page-intro">
+            Welcome to PromptVerse! To ensure a positive, creative, and collaborative environment for everyone, please read and follow these guidelines. Our community thrives on respect, quality, and shared learning.
+        </p>
+
+        <div class="guidelines-container">
+            <section class="guidelines-section">
+                <h2><i class="fas fa-hands-helping"></i>Our Philosophy</h2>
+                <p>PromptVerse is built on the idea that sharing and refining prompts collectively leads to better creativity and innovation for everyone. We believe in:
+                </p>
+                <ul>
+                    <li><strong>Openness:</strong> Freely sharing prompts and ideas.</li>
+                    <li><strong>Collaboration:</strong> Working together to improve content.</li>
+                    <li><strong>Respect:</strong> Valuing diverse perspectives and contributions.</li>
+                    <li><strong>Quality:</strong> Striving for clear, useful, and inspiring prompts.</li>
+                </ul>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-check-circle"></i>Acceptable Content</h2>
+                <p>When creating or editing prompts and categories, please adhere to the following:</p>
+                <h3><i class="fas fa-user-friends"></i> Be Respectful</h3>
+                <ul>
+                    <li>Do not post content that is defamatory, abusive, harassing, threatening, or an invasion of a right of privacy of another person.</li>
+                    <li>Avoid hate speech, discriminatory remarks, or content that promotes violence against individuals or groups based on race, ethnic origin, religion, disability, gender, age, veteran status, or sexual orientation/gender identity.</li>
+                </ul>
+
+                <h3><i class="fas fa-lightbulb"></i> Be Original or Properly Attributed</h3>
+                <ul>
+                    <li>Share prompts that you've created or that are freely available. If you're sharing a prompt inspired by someone else's work, give credit where it's due if possible.</li>
+                    <li>Do not upload content that infringes on copyrights, trademarks, or intellectual property rights of others.</li>
+                </ul>
+
+                <h3><i class="fas fa-star"></i> Be Clear and Useful</h3>
+                <ul>
+                    <li>Prompts should be understandable and provide enough context for others to use them effectively.</li>
+                    <li>Categories should be well-defined and help users find relevant prompts.</li>
+                </ul>
+
+                <h3><i class="fas fa-shield-alt"></i> No Harmful Content</h3>
+                <ul>
+                    <li>Do not post content that is obscene, pornographic, or sexually explicit.</li>
+                    <li>Avoid content that promotes illegal activities or substances.</li>
+                    <li>No malware, viruses, or other malicious code.</li>
+                </ul>
+
+                <h3><i class="fas fa-ban"></i> No Spam or Excessive Self-Promotion</h3>
+                <ul>
+                    <li>Content should be focused on prompts and their usage.</li>
+                    <li>Avoid excessive advertising, affiliate links, or irrelevant self-promotion. Linking to your own relevant projects is acceptable if done sparingly and in context.</li>
+                </ul>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-file-alt"></i>Creating & Editing Prompts</h2>
+                <h3><i class="fas fa-award"></i> Quality over Quantity</h3>
+                <p>Aim to create prompts that are thoughtful and well-constructed. A few high-quality prompts are more valuable than many low-quality ones.</p>
+
+                <h3><i class="fas fa-info-circle"></i> Provide Context</h3>
+                <p>When creating a prompt, include a clear title and, if helpful, a brief description of its purpose, how to use it, or any specific variables users might need to fill in.</p>
+
+                <h3><i class="fas fa-language"></i> Use Clear Language</h3>
+                <p>Write prompts in clear, concise language. Avoid jargon where possible, or explain it if necessary. Ensure your prompt is grammatically correct and easy to understand.</p>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-folder-plus"></i>Creating & Editing Categories</h2>
+                <h3><i class="fas fa-search"></i> Uniqueness and Relevance</h3>
+                <p>Before creating a new category, check if a similar one already exists. New categories should fill a genuine need and be distinct from existing ones.</p>
+
+                <h3><i class="fas fa-tag"></i> Clear Naming and Description</h3>
+                <p>Category names should be concise and accurately reflect the content within. Provide a clear description for the category to help users understand its scope.</p>
+
+                <h3><i class="fas fa-icons"></i> Appropriate Icon and Color</h3>
+                <p>Choose an icon and color that visually represent the category. This helps with navigation and makes the platform more user-friendly.</p>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-tasks"></i>Review Process</h2>
+                <h3><i class="fas fa-paper-plane"></i> Initial Submission</h3>
+                <p>When you submit a new prompt, it becomes immediately available to the community. New categories, however, undergo a review process.</p>
+
+                <h3><i class="fas fa-users-cog"></i> Community Voting (for New Categories)</h3>
+                <p>Newly created categories are placed in a "Pending Approval" section. Community members can vote on these categories. A category typically needs a certain number of upvotes (e.g., 5 net upvotes) to be considered for approval.</p>
+
+                <h3><i class="fas fa-user-shield"></i> Moderator Review</h3>
+                <p>Our volunteer moderators review pending categories that have met the community voting threshold. They check for adherence to guidelines, uniqueness, and overall quality. Moderators may also review flagged prompts or edits.</p>
+                <div class="guideline-alert guideline-alert-info">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <strong>Moderator Discretion:</strong> Moderators reserve the right to edit, merge, or remove categories and prompts that violate guidelines or are detrimental to the platform's quality, even if they have received community upvotes.
+                    </div>
+                </div>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-edit"></i>Editing Etiquette</h2>
+                <h3><i class="fas fa-tools"></i> Constructive Edits</h3>
+                <p>When editing a prompt or category, aim to improve its clarity, usefulness, or accuracy. Edits should add value to the content.</p>
+
+                <h3><i class="fas fa-comment-dots"></i> Explain Your Changes</h3>
+                <p>When making significant edits, provide a brief reason for your changes. This helps the original creator and other community members understand the rationale behind the modifications.</p>
+
+                <h3><i class="fas fa-handshake"></i> Respect Original Intent</h3>
+                <p>While improvements are encouraged, try to respect the original intent of the prompt or category creator. Avoid drastically changing the core idea unless it's clearly flawed or problematic.</p>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-balance-scale"></i>Community Moderation System</h2>
+                <h3><i class="fas fa-flag"></i> Reporting Content</h3>
+                <p>If you encounter a prompt or category that violates these guidelines, please use the "Report" feature. Provide a clear reason for your report so moderators can take appropriate action.</p>
+
+                <h3><i class="fas fa-vote-yea"></i> Voting System</h3>
+                <p>Your votes on pending categories help shape the platform. Upvote categories you find useful and well-defined. Downvote categories that are unclear, redundant, or violate guidelines. Constructive feedback in comments is also encouraged.</p>
+
+                <h3><i class="fas fa-user-tie"></i> Moderator Roles</h3>
+                <p>Moderators are trusted community members who volunteer their time to help maintain the quality and integrity of PromptVerse. They review reported content, approve new categories, and help resolve disputes.</p>
+                <div class="guideline-alert guideline-alert-info">
+                    <i class="fas fa-user-plus"></i>
+                    <div>
+                        <strong>Becoming a Moderator:</strong> Active and helpful community members who consistently demonstrate good judgment and adherence to guidelines may be invited to become moderators.
+                    </div>
+                </div>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-gavel"></i>Consequences of Violations</h2>
+                <p>Violations of these guidelines may result in:</p>
+                <ul>
+                    <li>Removal or editing of the offending content.</li>
+                    <li>A warning from moderators.</li>
+                    <li>Temporary or permanent suspension of account privileges, including the ability to submit or edit content.</li>
+                    <li>In severe cases, a permanent ban from PromptVerse.</li>
+                </ul>
+                <p>Decisions are made at the discretion of the moderation team, based on the severity and frequency of violations.</p>
+            </section>
+
+            <section class="guidelines-section">
+                <h2><i class="fas fa-envelope"></i>Contact Us</h2>
+                <p>If you have questions about these guidelines, need to report a serious issue, or have suggestions for improving PromptVerse, please feel free to <a href="mailto:support@promptverse.example.com">contact us</a> (this is a placeholder email).</p>
+            </section>
+
+            <div class="guideline-alert guideline-alert-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <strong>Guidelines Subject to Change:</strong> These Community Guidelines may be updated from time to time. We encourage you to review them periodically. Your continued use of PromptVerse signifies your acceptance of these guidelines.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PromptVerse</h3>
+                    <p>A free, community-driven database of prompts for AI, creative writing, and more.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-reddit"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#prompts">Prompts</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="upload.html">Upload</a></li>
+                        <li><a href="manage-categories.html">Manage Categories</a></li>
+                        <li><a href="community-guidelines.html">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PromptVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+[
+  {
+    "id": "system",
+    "username": "PromptVerse System",
+    "email": "system@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=system",
+    "joinDate": "2024-01-01T00:00:00Z",
+    "bio": "Automated system account for PromptVerse.",
+    "promptsUploaded": 0,
+    "commentsMade": 0,
+    "outputsShared": 0,
+    "role": "system",
+    "lastLogin": "2024-01-01T00:00:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": false
+    }
+  },
+  {
+    "id": "user_default_anonymous",
+    "username": "Anonymous User",
+    "email": "anonymous@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=anonymous",
+    "joinDate": "2024-01-01T00:00:01Z",
+    "bio": "A guest exploring PromptVerse.",
+    "promptsUploaded": 0,
+    "commentsMade": 0,
+    "outputsShared": 0,
+    "role": "guest",
+    "lastLogin": "2024-01-01T00:00:01Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": false
+    }
+  },
+  {
+    "id": "user_jane_writer_01",
+    "username": "JaneWriter",
+    "email": "janewriter@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_jane_writer_01",
+    "joinDate": "2024-02-10T08:30:00Z",
+    "bio": "Passionate writer and storyteller. Loves exploring new narrative forms.",
+    "promptsUploaded": 5,
+    "commentsMade": 12,
+    "outputsShared": 3,
+    "role": "member",
+    "lastLogin": "2025-05-28T10:15:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["creative-writing", "fantasy"]
+    }
+  },
+  {
+    "id": "user_code_guru_02",
+    "username": "CodeGuru",
+    "email": "codeguru@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_code_guru_02",
+    "joinDate": "2024-03-05T11:00:00Z",
+    "bio": "Software engineer with a knack for elegant solutions and clean code. AI enthusiast.",
+    "promptsUploaded": 8,
+    "commentsMade": 25,
+    "outputsShared": 10,
+    "role": "member",
+    "lastLogin": "2025-05-27T14:00:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": true,
+      "favoriteCategories": ["programming", "ai-assistants"]
+    }
+  },
+  {
+    "id": "user_world_builder_03",
+    "username": "WorldBuilder",
+    "email": "worldbuilder@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_world_builder_03",
+    "joinDate": "2024-04-15T16:45:00Z",
+    "bio": "Architect of imaginary realms and weaver of epic tales. If you can dream it, I can build it (in text).",
+    "promptsUploaded": 3,
+    "commentsMade": 8,
+    "outputsShared": 2,
+    "role": "member",
+    "lastLogin": "2025-05-26T09:30:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": false,
+      "favoriteCategories": ["fantasy", "creative-writing"]
+    }
+  },
+  {
+    "id": "user_prof_write_04",
+    "username": "ProfessorWrite",
+    "email": "professorwrite@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_prof_write_04",
+    "joinDate": "2024-01-20T10:00:00Z",
+    "bio": "Academic and educator. Helping students and researchers craft better arguments.",
+    "promptsUploaded": 10,
+    "commentsMade": 30,
+    "outputsShared": 5,
+    "role": "moderator",
+    "lastLogin": "2025-05-29T08:00:00Z",
+    "preferences": {
+      "theme": "light",
+      "notifications": true,
+      "favoriteCategories": ["education", "science"]
+    }
+  },
+  {
+    "id": "user_copy_pro_05",
+    "username": "CopyPro",
+    "email": "copypro@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_copy_pro_05",
+    "joinDate": "2024-05-01T13:20:00Z",
+    "bio": "Words that sell. Crafting compelling copy for marketing and beyond.",
+    "promptsUploaded": 6,
+    "commentsMade": 15,
+    "outputsShared": 7,
+    "role": "member",
+    "lastLogin": "2025-05-25T11:00:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["marketing", "business"]
+    }
+  },
+  {
+    "id": "user_story_master_06",
+    "username": "StoryMaster",
+    "email": "storymaster@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_story_master_06",
+    "joinDate": "2024-06-10T09:00:00Z",
+    "bio": "Master of plot twists and character arcs. Let's write something unforgettable.",
+    "promptsUploaded": 4,
+    "commentsMade": 18,
+    "outputsShared": 4,
+    "role": "member",
+    "lastLogin": "2025-05-24T18:00:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": false,
+      "favoriteCategories": ["creative-writing"]
+    }
+  },
+  {
+    "id": "user_apoc_writer_07",
+    "username": "ApocWriter",
+    "email": "apocwriter@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_apoc_writer_07",
+    "joinDate": "2024-07-22T17:00:00Z",
+    "bio": "Chronicler of wastelands and survivor tales. The end is just the beginning.",
+    "promptsUploaded": 2,
+    "commentsMade": 5,
+    "outputsShared": 1,
+    "role": "member",
+    "lastLogin": "2025-05-28T12:30:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["creative-writing", "fantasy"]
+    }
+  },
+  {
+    "id": "user_dev_designer_08",
+    "username": "DevDesigner",
+    "email": "devdesigner@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_dev_designer_08",
+    "joinDate": "2024-08-01T10:10:00Z",
+    "bio": "Bridging the gap between code and design. Building intuitive user experiences.",
+    "promptsUploaded": 3,
+    "commentsMade": 9,
+    "outputsShared": 3,
+    "role": "member",
+    "lastLogin": "2025-05-27T19:00:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": true,
+      "favoriteCategories": ["programming", "ai-assistants"]
+    }
+  },
+  {
+    "id": "user_sky_dreamer_09",
+    "username": "SkyDreamer",
+    "email": "skydreamer@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_sky_dreamer_09",
+    "joinDate": "2024-09-12T12:00:00Z",
+    "bio": "Imagining worlds beyond the horizon. Creator of floating cities and cloud castles.",
+    "promptsUploaded": 1,
+    "commentsMade": 3,
+    "outputsShared": 0,
+    "role": "member",
+    "lastLogin": "2025-05-26T16:45:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": false,
+      "favoriteCategories": ["fantasy"]
+    }
+  },
+  {
+    "id": "user_science_comm_10",
+    "username": "ScienceComm",
+    "email": "sciencecomm@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_science_comm_10",
+    "joinDate": "2024-10-18T14:30:00Z",
+    "bio": "Making complex science accessible to everyone. Ask me anything!",
+    "promptsUploaded": 7,
+    "commentsMade": 22,
+    "outputsShared": 6,
+    "role": "member",
+    "lastLogin": "2025-05-25T10:30:00Z",
+    "preferences": {
+      "theme": "light",
+      "notifications": true,
+      "favoriteCategories": ["science", "education"]
+    }
+  },
+  {
+    "id": "user_social_savvy_11",
+    "username": "SocialSavvy",
+    "email": "socialsavvy@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_social_savvy_11",
+    "joinDate": "2024-11-02T11:11:00Z",
+    "bio": "Marketing strategist and social media guru. Let's make some noise!",
+    "promptsUploaded": 4,
+    "commentsMade": 11,
+    "outputsShared": 2,
+    "role": "member",
+    "lastLogin": "2025-05-24T15:00:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": true,
+      "favoriteCategories": ["marketing"]
+    }
+  },
+  {
+    "id": "user_ai_humorist_12",
+    "username": "AI_Humorist",
+    "email": "aihumorist@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_ai_humorist_12",
+    "joinDate": "2024-12-01T09:09:00Z",
+    "bio": "Finding the funny in artificial intelligence. Sarcasm is my primary language.",
+    "promptsUploaded": 5,
+    "commentsMade": 19,
+    "outputsShared": 8,
+    "role": "member",
+    "lastLogin": "2025-05-23T11:20:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": false,
+      "favoriteCategories": ["ai-assistants", "creative-writing"]
+    }
+  },
+  {
+    "id": "user_bluesman_13",
+    "username": "BluesMan",
+    "email": "bluesman@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_bluesman_13",
+    "joinDate": "2025-01-05T18:00:00Z",
+    "bio": "Got the blues for modern times. Strummin' my guitar and writin' songs.",
+    "promptsUploaded": 2,
+    "commentsMade": 6,
+    "outputsShared": 1,
+    "role": "member",
+    "lastLogin": "2025-05-22T17:30:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": true,
+      "favoriteCategories": ["music-composition"]
+    }
+  },
+  {
+    "id": "user_puzzle_dev_14",
+    "username": "PuzzleDev",
+    "email": "puzzledev@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_puzzle_dev_14",
+    "joinDate": "2025-02-11T15:15:00Z",
+    "bio": "Designing mind-bending puzzles and game mechanics. If it's not challenging, it's not fun.",
+    "promptsUploaded": 3,
+    "commentsMade": 7,
+    "outputsShared": 2,
+    "role": "member",
+    "lastLogin": "2025-05-21T12:45:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["game-development", "programming"]
+    }
+  },
+  {
+    "id": "user_mindful_guide_15",
+    "username": "MindfulGuide",
+    "email": "mindfulguide@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_mindful_guide_15",
+    "joinDate": "2025-03-19T08:45:00Z",
+    "bio": "Helping you find calm in the chaos. Mindfulness and meditation enthusiast.",
+    "promptsUploaded": 6,
+    "commentsMade": 14,
+    "outputsShared": 5,
+    "role": "member",
+    "lastLogin": "2025-05-20T10:00:00Z",
+    "preferences": {
+      "theme": "light",
+      "notifications": false,
+      "favoriteCategories": ["health-wellness"]
+    }
+  },
+  {
+    "id": "user_creative_thinker_16",
+    "username": "CreativeThinker",
+    "email": "creativethinker@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_creative_thinker_16",
+    "joinDate": "2025-04-02T16:30:00Z",
+    "bio": "Thinking outside the box is my default mode. Always looking for new ideas.",
+    "promptsUploaded": 1,
+    "commentsMade": 4,
+    "outputsShared": 0,
+    "role": "member",
+    "lastLogin": "2025-05-19T17:00:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": true,
+      "favoriteCategories": ["uncategorized"]
+    }
+  },
+  {
+    "id": "user_musiclover_01",
+    "username": "MusicLover",
+    "email": "musiclover@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_musiclover_01",
+    "joinDate": "2024-02-01T10:00:00Z",
+    "bio": "Exploring the world one song at a time. Loves creating and sharing music prompts.",
+    "promptsUploaded": 12,
+    "commentsMade": 35,
+    "outputsShared": 8,
+    "role": "member",
+    "lastLogin": "2025-05-28T11:00:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["music-composition", "creative-writing"]
+    }
+  },
+  {
+    "id": "user_chefmaster_02",
+    "username": "ChefMaster",
+    "email": "chefmaster@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_chefmaster_02",
+    "joinDate": "2024-02-20T14:30:00Z",
+    "bio": "Culinary artist and recipe innovator. Always cooking up something new.",
+    "promptsUploaded": 7,
+    "commentsMade": 20,
+    "outputsShared": 10,
+    "role": "member",
+    "lastLogin": "2025-05-27T09:00:00Z",
+    "preferences": {
+      "theme": "light",
+      "notifications": true,
+      "favoriteCategories": ["culinary-arts", "health-wellness"]
+    }
+  },
+  {
+    "id": "user_podcastpro_03",
+    "username": "PodcastPro",
+    "email": "podcastpro@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_podcastpro_03",
+    "joinDate": "2025-05-18T09:00:00Z",
+    "bio": "Host and producer of several podcasts. Passionate about audio storytelling.",
+    "promptsUploaded": 2,
+    "commentsMade": 5,
+    "outputsShared": 1,
+    "role": "member",
+    "lastLogin": "2025-05-29T07:00:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": true,
+      "favoriteCategories": ["podcast-scripts", "creative-writing"]
+    }
+  },
+  {
+    "id": "user_datascientist_04",
+    "username": "DataScientist",
+    "email": "datascientist@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_datascientist_04",
+    "joinDate": "2025-05-19T12:00:00Z",
+    "bio": "Turning data into insights. Machine learning, statistics, and visualization.",
+    "promptsUploaded": 4,
+    "commentsMade": 10,
+    "outputsShared": 3,
+    "role": "member",
+    "lastLogin": "2025-05-28T15:00:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["data-analysis", "programming", "science"]
+    }
+  },
+  {
+    "id": "user_artlover_05",
+    "username": "ArtLover",
+    "email": "artlover@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_artlover_05",
+    "joinDate": "2025-05-01T11:00:00Z",
+    "bio": "Appreciator and creator of all things art. Digital, traditional, and everything in between.",
+    "promptsUploaded": 6,
+    "commentsMade": 15,
+    "outputsShared": 4,
+    "role": "member",
+    "lastLogin": "2025-05-26T10:00:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": false,
+      "favoriteCategories": ["digital-art", "creative-writing", "photography"]
+    }
+  },
+  {
+    "id": "user_techwiz_06",
+    "username": "TechWiz",
+    "email": "techwiz@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_techwiz_06",
+    "joinDate": "2025-04-20T10:00:00Z",
+    "bio": "Gadget geek and technology enthusiast. Always exploring the latest tech.",
+    "promptsUploaded": 1,
+    "commentsMade": 3,
+    "outputsShared": 0,
+    "role": "member",
+    "lastLogin": "2025-05-20T13:00:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["programming", "ai-assistants"]
+    }
+  },
+  {
+    "id": "user_gamerdev_07",
+    "username": "GamerDev",
+    "email": "gamerdev@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_gamerdev_07",
+    "joinDate": "2024-03-15T10:00:00Z",
+    "bio": "Indie game developer and lover of interactive storytelling.",
+    "promptsUploaded": 15,
+    "commentsMade": 40,
+    "outputsShared": 12,
+    "role": "moderator",
+    "lastLogin": "2025-05-29T09:30:00Z",
+    "preferences": {
+      "theme": "dark_purple",
+      "notifications": true,
+      "favoriteCategories": ["game-development", "programming", "creative-writing"]
+    }
+  },
+  {
+    "id": "user_shutterbug_08",
+    "username": "Shutterbug",
+    "email": "shutterbug@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_shutterbug_08",
+    "joinDate": "2025-05-20T09:00:00Z",
+    "bio": "Capturing moments, one click at a time. Photography enthusiast.",
+    "promptsUploaded": 0,
+    "commentsMade": 2,
+    "outputsShared": 0,
+    "role": "member",
+    "lastLogin": "2025-05-28T18:00:00Z",
+    "preferences": {
+      "theme": "light",
+      "notifications": false,
+      "favoriteCategories": ["photography"]
+    }
+  },
+  {
+    "id": "user_wellnessguru_09",
+    "username": "WellnessGuru",
+    "email": "wellnessguru@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_wellnessguru_09",
+    "joinDate": "2024-02-25T16:00:00Z",
+    "bio": "Promoting a healthy body and mind. Fitness, nutrition, and mindfulness advocate.",
+    "promptsUploaded": 9,
+    "commentsMade": 28,
+    "outputsShared": 7,
+    "role": "member",
+    "lastLogin": "2025-05-27T17:00:00Z",
+    "preferences": {
+      "theme": "light",
+      "notifications": true,
+      "favoriteCategories": ["health-wellness", "culinary-arts"]
+    }
+  },
+  {
+    "id": "user_story_fanatic_02",
+    "username": "StoryFanatic",
+    "email": "storyfanatic@promptverse.example.com",
+    "profilePicture": "https://i.pravatar.cc/150?u=user_story_fanatic_02",
+    "joinDate": "2025-05-15T12:00:00Z",
+    "bio": "Loves reading and critiquing stories. Always looking for the next great narrative.",
+    "promptsUploaded": 0,
+    "commentsMade": 15,
+    "outputsShared": 2,
+    "role": "member",
+    "lastLogin": "2025-05-29T06:00:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true,
+      "favoriteCategories": ["creative-writing", "fantasy"]
+    }
+  }
+]
